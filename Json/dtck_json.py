@@ -30,7 +30,7 @@ if response.status_code == 200:
         # Request was successful, processing the response, converting into JSON
         data = response.json()
 else:
-    # Request failed, wrinting to console error code
+    # Request failed, writing to console error code
     print("Error:", response.status_code)
     print(response.text)
     exit()
